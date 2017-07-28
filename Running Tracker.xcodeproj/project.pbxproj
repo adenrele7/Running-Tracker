@@ -12,6 +12,7 @@
 		DDADB71F1F28FD2400732EBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDADB71D1F28FD2400732EBB /* Main.storyboard */; };
 		DDADB7211F28FD2400732EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDADB7201F28FD2400732EBB /* Assets.xcassets */; };
 		DDADB7241F28FD2400732EBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDADB7221F28FD2400732EBB /* LaunchScreen.storyboard */; };
+		DDADB72C1F2BA86C00732EBB /* RunningTracker.sketch in Resources */ = {isa = PBXBuildFile; fileRef = DDADB72B1F2BA86C00732EBB /* RunningTracker.sketch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DDADB7201F28FD2400732EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDADB7231F28FD2400732EBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDADB7251F28FD2400732EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDADB72B1F2BA86C00732EBB /* RunningTracker.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = RunningTracker.sketch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				DDADB71B1F28FD2400732EBB /* ViewController.swift */,
 				DDADB71D1F28FD2400732EBB /* Main.storyboard */,
 				DDADB7201F28FD2400732EBB /* Assets.xcassets */,
+				DDADB72B1F2BA86C00732EBB /* RunningTracker.sketch */,
 				DDADB7221F28FD2400732EBB /* LaunchScreen.storyboard */,
 				DDADB7251F28FD2400732EBB /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 			files = (
 				DDADB7241F28FD2400732EBB /* LaunchScreen.storyboard in Resources */,
 				DDADB7211F28FD2400732EBB /* Assets.xcassets in Resources */,
+				DDADB72C1F2BA86C00732EBB /* RunningTracker.sketch in Resources */,
 				DDADB71F1F28FD2400732EBB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				DDADB72A1F28FD2400732EBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

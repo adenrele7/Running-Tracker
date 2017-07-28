@@ -1,26 +1,156 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h4M-Mb-I5W">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="k1o-pd-xPm">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EPn-Xk-svr" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Uiu-Nt-DjH"/>
+                        <viewControllerLayoutGuide type="bottom" id="AiX-tL-y0g"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="GEw-8K-jZX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1551844892" green="0.19808851520000001" blue="0.13951148199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.1551844892" green="0.19808851520000001" blue="0.13951148199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="116225-magic-marker-icon-sports-hobbies-people-runner-797174" id="asB-na-Bih"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvc-ke-JA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="588" y="303.59820089955025"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FBE-OS-f3t">
+            <objects>
+                <viewController id="h4M-Mb-I5W" customClass="ViewController" customModule="Running_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BTv-jx-e7O"/>
+                        <viewControllerLayoutGuide type="bottom" id="x5v-dJ-dri"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ISU-W4-fHJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="running_people_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="rYo-dl-OfV">
+                                <rect key="frame" x="0.0" y="4" width="375" height="658"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpB-Rv-0If" colorLabel="IBBuiltInLabel-Blue">
+                                <rect key="frame" x="41" y="323" width="126" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.67420911790000004" green="0.15305520403771661" blue="0.21753881664699096" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start Timer">
+                                    <color key="titleShadowColor" red="0.393019365204684" green="0.86476840101522845" blue="0.17747556053419861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTimerButton:" destination="h4M-Mb-I5W" eventType="touchUpInside" id="ERd-0P-ZkI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUc-vR-OZ2">
+                                <rect key="frame" x="73" y="142" width="55" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-X5-snf">
+                                <rect key="frame" x="216" y="324" width="120" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.15607991623545567" green="0.86476840099999996" blue="0.14667581671695315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.21960784310000001" green="0.59215686270000001" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Stop Timer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopTimer:" destination="h4M-Mb-I5W" eventType="touchUpInside" id="O8J-pj-Nq3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5DS-TC-Lsf">
+                                <rect key="frame" x="52" y="254" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kh7-Rn-Y7v">
+                                <rect key="frame" x="228" y="254" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I67-d3-b8j">
+                                <rect key="frame" x="63" y="667" width="249" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.095311723031766785" green="0.62579330475854977" blue="0.86476840101522845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqy-Py-8Xu">
+                                <rect key="frame" x="252" y="142" width="49" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30555508243189139" green="0.38336770301725898" blue="0.27853298062807386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rYo-dl-OfV" firstAttribute="top" secondItem="Iqy-Py-8Xu" secondAttribute="bottom" id="5y3-wc-Eic"/>
+                            <constraint firstAttribute="bottom" secondItem="rYo-dl-OfV" secondAttribute="bottom" id="bTu-ba-7Zu"/>
+                            <constraint firstAttribute="trailing" secondItem="rYo-dl-OfV" secondAttribute="trailing" id="pdp-jb-HEm"/>
+                            <constraint firstItem="rYo-dl-OfV" firstAttribute="leading" secondItem="ISU-W4-fHJ" secondAttribute="leading" id="xPw-MF-7u3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_home_black" id="E9r-KV-mwG"/>
+                    <connections>
+                        <outlet property="distanceField" destination="5DS-TC-Lsf" id="RLS-6c-ty9"/>
+                        <outlet property="startTimer" destination="xpB-Rv-0If" id="W8z-7I-f75"/>
+                        <outlet property="stopTimer" destination="tHV-X5-snf" id="nVb-l8-b8U"/>
+                        <outlet property="stopTimerButton" destination="tHV-X5-snf" id="vCx-8m-3a6"/>
+                        <outlet property="timeField" destination="kh7-Rn-Y7v" id="o0B-A9-BLv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dJ-a6-lVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="-419"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Op5-ko-6Vc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIB-XM-yEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="9NS-uO-AIW" sceneMemberID="viewController">
+                    <value key="contentSizeForViewInPopover" type="size" width="368" height="667"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="G3T-kA-ScC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="h4M-Mb-I5W" kind="relationship" relationship="viewControllers" id="Z40-zZ-c3q"/>
+                        <segue destination="EPn-Xk-svr" kind="relationship" relationship="viewControllers" id="6SH-ul-ftP"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-363" y="-23"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="116225-magic-marker-icon-sports-hobbies-people-runner-797174" width="512" height="512"/>
+        <image name="running_people_02.png" width="500" height="658"/>
+        <image name="tab_home_black" width="25" height="25"/>
+    </resources>
+    <color key="tintColor" red="0.15923872434483144" green="0.19808851522842641" blue="0.14379770152870466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
