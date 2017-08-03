@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD5C75EC1F2FBB300092B3E4 /* Sports-Running-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5C75EB1F2FBB300092B3E4 /* Sports-Running-icon.png */; };
 		DDADB71A1F28FD2400732EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADB7191F28FD2400732EBB /* AppDelegate.swift */; };
 		DDADB71C1F28FD2400732EBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADB71B1F28FD2400732EBB /* ViewController.swift */; };
 		DDADB71F1F28FD2400732EBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDADB71D1F28FD2400732EBB /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD5C75EB1F2FBB300092B3E4 /* Sports-Running-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sports-Running-icon.png"; sourceTree = "<group>"; };
 		DDADB7161F28FD2400732EBB /* Running Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Running Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDADB7191F28FD2400732EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDADB71B1F28FD2400732EBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				DDADB71B1F28FD2400732EBB /* ViewController.swift */,
 				DDADB71D1F28FD2400732EBB /* Main.storyboard */,
 				DDADB7201F28FD2400732EBB /* Assets.xcassets */,
+				DD5C75EB1F2FBB300092B3E4 /* Sports-Running-icon.png */,
 				DDADB72B1F2BA86C00732EBB /* RunningTracker.sketch */,
 				DDADB7221F28FD2400732EBB /* LaunchScreen.storyboard */,
 				DDADB7251F28FD2400732EBB /* Info.plist */,
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5C75EC1F2FBB300092B3E4 /* Sports-Running-icon.png in Resources */,
 				DDADB7241F28FD2400732EBB /* LaunchScreen.storyboard in Resources */,
 				DDADB7211F28FD2400732EBB /* Assets.xcassets in Resources */,
 				DDADB72C1F2BA86C00732EBB /* RunningTracker.sketch in Resources */,
