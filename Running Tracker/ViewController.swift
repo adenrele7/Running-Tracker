@@ -8,8 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController  {
 
+    var startStopWatch: Bool = true
+    var addLap: Bool = false
+
+    var timer = Timer()
+    
+    var minutes: Int = 0
+    var seconds: Int = 0
+    var fractions: Int = 0
+    
+    var stopwatchString: String = ""
+    var time = 0.0
+    
+    var isRunning =  false
+    
     @IBOutlet weak var startTimer: UIButton!
 
     @IBOutlet weak var stopTimer: UIButton!
@@ -21,28 +35,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var saveButton: UIButton!
 
     @IBOutlet weak var restartButton: UIButton!
-
-    @IBOutlet weak var pauseButton: UIButton!
     
     @IBOutlet weak var timeLabel: UILabel!
+   
     
-    var time = 0.0
-  
-    var timer = Timer()
-    
-    var addLap: Bool = false
-  
-    var minutes: Int = 0
-    var seconds: Int = 0
-    var fractions: Int = 0
-    
-    var isRunning =  false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timeLabel.text = "00:00.00"
         
-     
-        timeLabel.text = "\(time)"
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,15 +57,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         timeLabel.text =  String(time)
         
     }
+    
     @IBAction func restartButton(_ sender: Any) {
         timer.invalidate()
         time = 0
+        
     }
 
     @IBAction func startTimerButton(_ sender: Any){
         
         if !isRunning{
-        timer = Timer.scheduledTimer(timeInterval: 1.1, target: self, selector: #selector(ViewController.action), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(ViewController.action), userInfo: nil, repeats: true)
         
         }
         
@@ -72,12 +75,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func updateStopwatch(){
         
-        fractions +=1
-       
+        fractions += 1
         if fractions == 100{
-            seconds +=1
-            fractions =0
+           
+            seconds += 1
+            fractions = 0
         }
+        if seconds == 60 {
+           
+            minutes += 1
+            seconds = 0
+        }
+        let fractionsString = fractions > 9 ? " \(fractions)" : "0\(fractions)"
+        let secondsString = seconds > 9 ? "\(seconds)" : "0\(seconds)"
+        let minutesString = minutes > 9 ? "\(minutes)" : "0\(minutes)"
+        
+        stopwatchString = "\(minutesString):\(secondsString).\(fractionsString)"
+        timeField.text = stopwatchString
         
     }
     
@@ -96,21 +110,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      
-        var cell = UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: "Cell")
 
-        cell.backgroundColor = self.view.backgroundColor
-        cell.textLabel?.text = "Lap"
-        cell.detailTextLabel?.text = "00:00:00"
-        return cell
-    }
-
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
-    }
-    }
+}
 
 
 
