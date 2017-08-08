@@ -7,22 +7,23 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ViewController: UIViewController  {
 
-    var startStopWatch: Bool = true
-    var addLap: Bool = false
+    private var startStopWatch: Bool = true
+    private var addLap: Bool = false
 
-    var timer = Timer()
+    private var timer = Timer()
     
-    var minutes: Int = 0
-    var seconds: Int = 0
-    var fractions: Int = 0
+    private var minutes: Int = 0
+    private var seconds: Int = 0
+    private var fractions: Int = 0
     
-    var stopwatchString: String = ""
-    var time = 0.0
+    private var stopwatchString: String = ""
+    var totalSec:Float = 0.0
     
-    var isRunning =  false
+    private var isRunning =  false
     
     @IBOutlet weak var startTimer: UIButton!
 
@@ -49,18 +50,17 @@ class ViewController: UIViewController  {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
-    
     }
 
     func action(){
-        time += 1
-        timeLabel.text =  String(time)
+        totalSec += 0.01
+        timeLabel.text =  String(describing: time)
         
     }
     
     @IBAction func restartButton(_ sender: Any) {
         timer.invalidate()
-        time = 0
+        time = 0.0
         
     }
 
@@ -96,11 +96,13 @@ class ViewController: UIViewController  {
     }
     
     
+    
     @IBAction func stopTimer(_ sender: Any) {
         
       
+        
         timer.invalidate()
-
+        time = 0
         
     }
     
@@ -112,6 +114,5 @@ class ViewController: UIViewController  {
    
 
 }
-
 
 

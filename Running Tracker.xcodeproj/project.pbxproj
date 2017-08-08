@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD1DCEFC1F35062A0006E604 /* RunningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DCEFB1F35062A0006E604 /* RunningView.swift */; };
+		DD1DCF241F38BD190006E604 /* RunningTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD1DCF221F38BD190006E604 /* RunningTracker.xcdatamodeld */; };
+		DD1DCF271F3A1C810006E604 /* running_people_02.png.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DD1DCF261F3A1C810006E604 /* running_people_02.png.jpeg */; };
+		DD1DCF291F3A1FF50006E604 /* RunDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DCF281F3A1FF50006E604 /* RunDetailsView.swift */; };
+		DD1DCF2D1F3A2A700006E604 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DCF2C1F3A2A700006E604 /* CoreDataStack.swift */; };
 		DD5C75EC1F2FBB300092B3E4 /* Sports-Running-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5C75EB1F2FBB300092B3E4 /* Sports-Running-icon.png */; };
 		DDADB71A1F28FD2400732EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADB7191F28FD2400732EBB /* AppDelegate.swift */; };
 		DDADB71C1F28FD2400732EBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADB71B1F28FD2400732EBB /* ViewController.swift */; };
@@ -18,7 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD1DCEFB1F35062A0006E604 /* RunningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunningView.swift; path = ../RunningView.swift; sourceTree = "<group>"; };
+		DD1DCF231F38BD190006E604 /* RunningTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RunningTracker.xcdatamodel; sourceTree = "<group>"; };
+		DD1DCF261F3A1C810006E604 /* running_people_02.png.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = running_people_02.png.jpeg; sourceTree = "<group>"; };
+		DD1DCF281F3A1FF50006E604 /* RunDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunDetailsView.swift; sourceTree = "<group>"; };
+		DD1DCF2C1F3A2A700006E604 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		DD5C75EB1F2FBB300092B3E4 /* Sports-Running-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sports-Running-icon.png"; sourceTree = "<group>"; };
 		DDADB7161F28FD2400732EBB /* Running Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Running Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDADB7191F28FD2400732EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD1DCF251F38BDC00006E604 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDADB71B1F28FD2400732EBB /* ViewController.swift */,
+				DD1DCF281F3A1FF50006E604 /* RunDetailsView.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DD1DCF2B1F3A2A370006E604 /* Background Pic */ = {
+			isa = PBXGroup;
+			children = (
+				DD1DCF261F3A1C810006E604 /* running_people_02.png.jpeg */,
+				DD5C75EB1F2FBB300092B3E4 /* Sports-Running-icon.png */,
+				DDADB72B1F2BA86C00732EBB /* RunningTracker.sketch */,
+			);
+			name = "Background Pic";
+			sourceTree = "<group>";
+		};
+		DD1DCF2E1F3A2A7E0006E604 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DD1DCF221F38BD190006E604 /* RunningTracker.xcdatamodeld */,
+				DD1DCF2C1F3A2A700006E604 /* CoreDataStack.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		DDADB70D1F28FD2400732EBB = {
 			isa = PBXGroup;
 			children = (
@@ -61,13 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				DDADB7191F28FD2400732EBB /* AppDelegate.swift */,
-				DD1DCEFB1F35062A0006E604 /* RunningView.swift */,
-				DDADB71B1F28FD2400732EBB /* ViewController.swift */,
+				DD1DCF251F38BDC00006E604 /* View Controllers */,
 				DDADB71D1F28FD2400732EBB /* Main.storyboard */,
 				DDADB7201F28FD2400732EBB /* Assets.xcassets */,
-				DD5C75EB1F2FBB300092B3E4 /* Sports-Running-icon.png */,
-				DDADB72B1F2BA86C00732EBB /* RunningTracker.sketch */,
 				DDADB7221F28FD2400732EBB /* LaunchScreen.storyboard */,
+				DD1DCF2B1F3A2A370006E604 /* Background Pic */,
+				DD1DCF2E1F3A2A7E0006E604 /* CoreData */,
 				DDADB7251F28FD2400732EBB /* Info.plist */,
 			);
 			path = "Running Tracker";
@@ -133,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD5C75EC1F2FBB300092B3E4 /* Sports-Running-icon.png in Resources */,
+				DD1DCF271F3A1C810006E604 /* running_people_02.png.jpeg in Resources */,
 				DDADB7241F28FD2400732EBB /* LaunchScreen.storyboard in Resources */,
 				DDADB7211F28FD2400732EBB /* Assets.xcassets in Resources */,
 				DDADB72C1F2BA86C00732EBB /* RunningTracker.sketch in Resources */,
@@ -147,9 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1DCF2D1F3A2A700006E604 /* CoreDataStack.swift in Sources */,
 				DDADB71C1F28FD2400732EBB /* ViewController.swift in Sources */,
-				DD1DCEFC1F35062A0006E604 /* RunningView.swift in Sources */,
+				DD1DCF291F3A1FF50006E604 /* RunDetailsView.swift in Sources */,
 				DDADB71A1F28FD2400732EBB /* AppDelegate.swift in Sources */,
+				DD1DCF241F38BD190006E604 /* RunningTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +350,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD1DCF221F38BD190006E604 /* RunningTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD1DCF231F38BD190006E604 /* RunningTracker.xcdatamodel */,
+			);
+			currentVersion = DD1DCF231F38BD190006E604 /* RunningTracker.xcdatamodel */;
+			path = RunningTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DDADB70E1F28FD2400732EBB /* Project object */;
 }
