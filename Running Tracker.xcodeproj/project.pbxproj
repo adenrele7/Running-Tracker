@@ -11,6 +11,10 @@
 		DD1DCF271F3A1C810006E604 /* running_people_02.png.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DD1DCF261F3A1C810006E604 /* running_people_02.png.jpeg */; };
 		DD1DCF291F3A1FF50006E604 /* RunDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DCF281F3A1FF50006E604 /* RunDetailsView.swift */; };
 		DD1DCF2D1F3A2A700006E604 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DCF2C1F3A2A700006E604 /* CoreDataStack.swift */; };
+		DD1DCF301F3E00E90006E604 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DCF2F1F3E00E90006E604 /* FormatDisplay.swift */; };
+		DD33707C1F463A4E0001852D /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33707B1F463A4E0001852D /* CoreDataHelper.swift */; };
+		DD33707E1F477C2E0001852D /* SavedLogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33707D1F477C2E0001852D /* SavedLogsTableViewController.swift */; };
+		DD3370801F477C820001852D /* SavedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33707F1F477C820001852D /* SavedCell.swift */; };
 		DD5C75EC1F2FBB300092B3E4 /* Sports-Running-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5C75EB1F2FBB300092B3E4 /* Sports-Running-icon.png */; };
 		DDADB71A1F28FD2400732EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADB7191F28FD2400732EBB /* AppDelegate.swift */; };
 		DDADB71C1F28FD2400732EBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADB71B1F28FD2400732EBB /* ViewController.swift */; };
@@ -25,6 +29,10 @@
 		DD1DCF261F3A1C810006E604 /* running_people_02.png.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = running_people_02.png.jpeg; sourceTree = "<group>"; };
 		DD1DCF281F3A1FF50006E604 /* RunDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunDetailsView.swift; sourceTree = "<group>"; };
 		DD1DCF2C1F3A2A700006E604 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DD1DCF2F1F3E00E90006E604 /* FormatDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
+		DD33707B1F463A4E0001852D /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		DD33707D1F477C2E0001852D /* SavedLogsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLogsTableViewController.swift; sourceTree = "<group>"; };
+		DD33707F1F477C820001852D /* SavedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedCell.swift; sourceTree = "<group>"; };
 		DD5C75EB1F2FBB300092B3E4 /* Sports-Running-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sports-Running-icon.png"; sourceTree = "<group>"; };
 		DDADB7161F28FD2400732EBB /* Running Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Running Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDADB7191F28FD2400732EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				DDADB71B1F28FD2400732EBB /* ViewController.swift */,
+				DD1DCF2F1F3E00E90006E604 /* FormatDisplay.swift */,
 				DD1DCF281F3A1FF50006E604 /* RunDetailsView.swift */,
+				DD33707D1F477C2E0001852D /* SavedLogsTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -95,8 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				DDADB7191F28FD2400732EBB /* AppDelegate.swift */,
+				DD33707B1F463A4E0001852D /* CoreDataHelper.swift */,
 				DD1DCF251F38BDC00006E604 /* View Controllers */,
 				DDADB71D1F28FD2400732EBB /* Main.storyboard */,
+				DD33707F1F477C820001852D /* SavedCell.swift */,
 				DDADB7201F28FD2400732EBB /* Assets.xcassets */,
 				DDADB7221F28FD2400732EBB /* LaunchScreen.storyboard */,
 				DD1DCF2B1F3A2A370006E604 /* Background Pic */,
@@ -182,8 +194,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD1DCF2D1F3A2A700006E604 /* CoreDataStack.swift in Sources */,
+				DD3370801F477C820001852D /* SavedCell.swift in Sources */,
+				DD33707C1F463A4E0001852D /* CoreDataHelper.swift in Sources */,
 				DDADB71C1F28FD2400732EBB /* ViewController.swift in Sources */,
 				DD1DCF291F3A1FF50006E604 /* RunDetailsView.swift in Sources */,
+				DD33707E1F477C2E0001852D /* SavedLogsTableViewController.swift in Sources */,
+				DD1DCF301F3E00E90006E604 /* FormatDisplay.swift in Sources */,
 				DDADB71A1F28FD2400732EBB /* AppDelegate.swift in Sources */,
 				DD1DCF241F38BD190006E604 /* RunningTracker.xcdatamodeld in Sources */,
 			);
